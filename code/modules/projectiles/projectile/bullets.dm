@@ -9,9 +9,11 @@
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
 	shrapnel_type = /obj/item/shrapnel/bullet
 	embed_type = /datum/embedding/bullet
-	wound_bonus = 0
-	wound_falloff_tile = -5
+	wound_bonus = 5
+	exposed_wound_bonus = 10
+	wound_falloff_tile = -2
 	embed_falloff_tile = -3
+	speed = 1.8
 
 /obj/projectile/bullet/smite
 	name = "divine retribution"

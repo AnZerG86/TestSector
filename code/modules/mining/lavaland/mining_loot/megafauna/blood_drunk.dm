@@ -127,6 +127,7 @@
 	icon_angle = 180
 	force = 20
 	wound_bonus = 15
+	armour_penetration = 40
 	w_class = WEIGHT_CLASS_NORMAL
 	sharpness = SHARP_EDGED
 	attack_verb_continuous = list("slices", "hunts", "butchers", "pierces")

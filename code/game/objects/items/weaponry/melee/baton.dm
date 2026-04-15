@@ -1,5 +1,5 @@
 /obj/item/melee/baton
-	name = "police baton"
+	name = "wooden baton"
 	desc = "A wooden truncheon for beating criminal scum."
 	desc_controls = "Left click to stun, right click to harm."
 	icon = 'icons/obj/weapons/baton.dmi'
@@ -313,6 +313,22 @@
 	icon = 'icons/obj/storage/box.dmi'
 	icon_state = "uk"
 	custom_price = PAYCHECK_COMMAND * 4.5
+
+/obj/item/melee/baton/police
+	name = "police baton"
+	desc = "A police rubber truncheon for beating criminal scum."
+	desc_controls = "Left click to stun, right click to harm."
+	icon_state = "police_baton"
+	inhand_icon_state = "police_baton"
+	worn_icon_state = "classic_baton"
+	icon_angle = -45
+	force = 12
+	stamina_damage = 50
+	w_class = WEIGHT_CLASS_NORMAL
+	wound_bonus = -10 // rubber baton is specially made to be the least traumatic
+	cooldown = (1 SECONDS)
+	/// The length of the knockdown applied to a struck living, non-cyborg mob.
+	knockdown_time = (1.5 SECONDS)
 
 /obj/item/melee/baton/telescopic
 	name = "telescopic baton"

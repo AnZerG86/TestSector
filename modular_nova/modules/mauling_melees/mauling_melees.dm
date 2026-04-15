@@ -8,9 +8,9 @@
 	desc = "An nondescript machete with a rubberized, non-conductive handle. Could be from some old military surplus, or from a recent stockpile, or anywhere in between. \
 	Good for hacking away at things, like plants, people, or plantpeople."
 	obj_flags = NONE
-	force = 20
+	force = 25
 	w_class = WEIGHT_CLASS_BULKY
-	throwforce = 10
+	throwforce = 15
 	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	throw_speed = 1
 	throw_range = 5
@@ -21,6 +21,7 @@
 	armor_type = /datum/armor/item_knife
 	wound_bonus = 10
 	exposed_wound_bonus = 20
+	armour_penetration = 10
 	tool_behaviour = TOOL_KNIFE
 	icon_angle = -45
 	/*

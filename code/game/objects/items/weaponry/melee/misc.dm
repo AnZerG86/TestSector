@@ -308,6 +308,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
 	desc = "Uncanny looking hammer."
 	force = 17
+	armour_penetration = 20
+	//stamina_damage = 10
 	throwforce = 14
 	throw_range = 4
 	w_class = WEIGHT_CLASS_NORMAL

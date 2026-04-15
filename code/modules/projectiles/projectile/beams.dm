@@ -18,6 +18,7 @@
 	reflectable = TRUE
 	wound_bonus = -20
 	exposed_wound_bonus = 10
+	speed = 2.5
 
 
 /obj/projectile/beam/laser
@@ -46,7 +47,7 @@
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
 	damage = 9
 	wound_bonus = -40
-	speed = 0.9
+	speed = 3
 
 /obj/projectile/beam/laser/accelerator
 	name = "accelerator laser"
@@ -68,7 +69,7 @@
 	icon_state = "hellfire"
 	wound_bonus = 0
 	damage = 30
-	speed = 1.6
+	speed = 2
 	light_color = "#FF969D"
 
 /obj/projectile/beam/laser/flare
@@ -189,7 +190,7 @@
 	icon_state = "scatterdisabler"
 	damage = 5.5
 	damage_falloff_tile = -0.5
-	speed = 1.2
+	//speed = 1.2
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/green_laser
 	tracer_type = /obj/effect/projectile/tracer/xray
 	muzzle_type = /obj/effect/projectile/muzzle/xray

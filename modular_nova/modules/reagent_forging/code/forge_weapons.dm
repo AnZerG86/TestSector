@@ -161,8 +161,9 @@
 /obj/item/forging/reagent_weapon/hammer
 	name = "forged hammer"
 	desc = "A heavy, weighted hammer that packs an incredible punch but can prove to be unwieldy. Useful for forging!"
-	force = 10
-	armour_penetration = 10
+	force = 15
+	//stamina_damage = 10
+	armour_penetration = 20
 	icon_state = "crush_hammer"
 	inhand_icon_state = "crush_hammer"
 	worn_icon_state = "hammer_back"

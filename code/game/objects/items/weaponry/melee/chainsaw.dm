@@ -11,6 +11,8 @@
 	righthand_file = 'icons/mob/inhands/weapons/chainsaw_righthand.dmi'
 	obj_flags = CONDUCTS_ELECTRICITY
 	force = 13
+	exposed_wound_bonus = 20
+	wound_bonus = 10
 	w_class = WEIGHT_CLASS_HUGE
 	throwforce = 13
 	throw_speed = 2
@@ -25,7 +27,7 @@
 	tool_behaviour = TOOL_SAW
 	toolspeed = 1.5 //Turn it on first you dork
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5, /datum/material/alloy/plasteel =  SHEET_MATERIAL_AMOUNT * 5, /datum/material/glass =  SHEET_MATERIAL_AMOUNT * 3)
-	var/force_on = 24
+	var/force_on = 25
 	/// The looping sound for our chainsaw when running
 	var/datum/looping_sound/chainsaw/chainsaw_loop
 	/// How long it takes to behead someone with this chainsaw.

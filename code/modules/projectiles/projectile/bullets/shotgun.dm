@@ -1,16 +1,18 @@
 /obj/projectile/bullet/shotgun_slug
 	name = "12g shotgun slug"
 	icon_state = "pellet"
-	damage = 25
-	armour_penetration = 30
+	damage = 40
+	stamina = 20
+	armour_penetration = 15
 	sharpness = SHARP_POINTY
-	wound_bonus = 0
-	exposed_wound_bonus = 15
+	wound_bonus = 20
+	speed = 1.5
 
 /obj/projectile/bullet/shotgun_slug/milspec
 	name = "12g shotgun milspec slug"
 	icon_state = "pellet"
 	damage = 50
+	armour_penetration = 20
 
 /obj/projectile/bullet/shotgun_slug/executioner
 	name = "executioner slug" // admin only, can dismember limbs
@@ -27,15 +29,16 @@
 	icon_state = "pellet"
 	damage = 10
 	stamina = 55
-	wound_bonus = 20
+	exposed_wound_bonus = 20
 	sharpness = NONE
 	embed_type = null
 
 /obj/projectile/bullet/shotgun_beanbag/a40mm
 	name = "rubber puck"
 	icon_state = "cannonball"
-	damage = 10
+	damage = 25
 	stamina = 80 //BONK
+	armour_penetration = 25
 	knockdown = 10
 	wound_bonus = 30
 	ricochets_max = 4
@@ -84,15 +87,17 @@
 
 /obj/projectile/bullet/pellet
 	icon_state = "pellet"
-	damage_falloff_tile = -0.25
+	damage_falloff_tile = -1
 
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
-	damage = 5
-	wound_bonus = 5
-	exposed_wound_bonus = 5
-	speed = 1.1
-	wound_falloff_tile = -0.5 //We would very much like this to cause wounds despite the low damage, so the drop off is relatively slow
+	damage = 8
+
+	armour_penetration = -20
+	wound_bonus = 10
+	exposed_wound_bonus = 30
+	speed = 1.3
+	wound_falloff_tile = -3
 	sharpness = SHARP_EDGED
 
 /**
@@ -106,7 +111,8 @@
 
 /obj/projectile/bullet/pellet/shotgun_buckshot/milspec
 	name = "milspec buckshot pellet"
-	damage = 7.5
+	damage = 10
+	speed = 1.6
 
 /obj/projectile/bullet/pellet/shotgun_buckshot/milspec/flak
 	name = "titanium ball bearing"
@@ -121,7 +127,7 @@
 	stamina = 10
 	sharpness = NONE
 	embed_type = null
-	speed = 0.8
+	speed = 1.5
 	stamina_falloff_tile = -0.25
 	ricochets_max = 4
 	ricochet_chance = 120
@@ -153,7 +159,7 @@
 	armour_penetration = 30
 	damage_falloff_tile = -0.2
 	wound_falloff_tile = -0.5
-	speed = 1.2
+	speed = 1.8
 	sharpness = SHARP_POINTY
 	embed_type = /datum/embedding/bullet/flechette
 

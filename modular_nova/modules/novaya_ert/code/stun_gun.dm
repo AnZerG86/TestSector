@@ -78,6 +78,7 @@
 	inhand_icon_state = "stun_knife"
 	base_icon_state = "stun_knife"
 	sharpness = SHARP_EDGED
+	attack_speed = 6
 	force = 15
 	throwforce = 15
 	wound_bonus = 5

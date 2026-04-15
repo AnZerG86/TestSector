@@ -1,13 +1,14 @@
 /obj/projectile/bullet/gyro
 	name ="explosive bolt"
 	icon_state= "bolter"
-	damage = 50
+	damage = 30
+	armour_penetration = 30
 	embed_type = null
 	shrapnel_type = null
 
 /obj/projectile/bullet/gyro/on_hit(atom/target, blocked = 0, pierce_hit)
 	..()
-	explosion(target, devastation_range = -1, light_impact_range = 2, explosion_cause = src)
+	explosion(target, devastation_range = -1, light_impact_range = 1, explosion_cause = src)
 	return BULLET_ACT_HIT
 
 /// PM9 standard HE rocket

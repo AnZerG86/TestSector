@@ -16,20 +16,21 @@
 	icon_angle = -90
 	desc = "The original knife, it is said that all other knives are only copies of this one."
 	obj_flags = CONDUCTS_ELECTRICITY
-	force = 10
 	demolition_mod = 0.75
 	w_class = WEIGHT_CLASS_SMALL
-	throwforce = 10
 	hitsound = 'sound/items/weapons/bladeslice.ogg'
-	throw_speed = 3
+	force = 10
+	attack_speed = 6
+	throwforce = 10
 	throw_range = 6
+	throw_speed = 3
+	wound_bonus = 5
+	exposed_wound_bonus = 15
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 6)
 	attack_verb_continuous = list("slashes", "slices", "tears", "lacerates", "rips", "dices", "cuts")
 	attack_verb_simple = list("slash", "slice", "tear", "lacerate", "rip", "dice", "cut")
 	sharpness = SHARP_EDGED
 	armor_type = /datum/armor/item_knife
-	wound_bonus = 5
-	exposed_wound_bonus = 15
 	tool_behaviour = TOOL_KNIFE
 	var/list/alt_continuous = list("stabs", "pierces", "shanks")
 	var/list/alt_simple = list("stab", "pierce", "shank")
@@ -117,14 +118,16 @@
 	inhand_icon_state = "butch"
 	icon_angle = -45
 	obj_flags = CONDUCTS_ELECTRICITY
-	force = 15
-	throwforce = 10
+	force = 30
+	throwforce = 15
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 6)
 	attack_verb_continuous = list("slices", "dices", "chops", "cubes", "minces", "juliennes", "chiffonades", "batonnets")
 	attack_verb_simple = list("slice", "dice", "chop", "cube", "mince", "julienne", "chiffonade", "batonnet")
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_price = PAYCHECK_CREW * 5
 	wound_bonus = 15
+	exposed_wound_bonus = 30
+	attack_speed = 8
 
 /obj/item/knife/butcher/make_stabby()
 	return
@@ -136,7 +139,9 @@
 	inhand_icon_state = "huntingknife"
 	icon_state = "huntingknife"
 	icon_angle = 180
-	wound_bonus = 10
+	wound_bonus = 15
+	force = 15
+	attack_speed = 7
 
 /obj/item/knife/hunting/set_butchering()
 	AddComponent(/datum/component/butchering, \
@@ -156,8 +161,11 @@
 	worn_icon_state = "buckknife"
 	icon_angle = -45
 	embed_type = /datum/embedding/combat_knife
-	force = 20
-	throwforce = 20
+	force = 15
+	throwforce = 25
+	wound_bonus = 15
+	exposed_wound_bonus = 20
+	armour_penetration = 10
 	attack_verb_continuous = list("slashes", "stabs", "slices", "tears", "lacerates", "rips", "cuts")
 	attack_verb_simple = list("slash", "stab", "slice", "tear", "lacerate", "rip", "cut")
 	slot_flags = ITEM_SLOT_MASK

@@ -26,9 +26,9 @@
 	// tg stats at time of writing: 25 damage, 30 AP, 0 wound bonus, 15 exposed wound bonus
 	// adjustment: +10 damage, to 35, +5 wound bonus, -5 wound bonus (still total 15 wound bonus). keeps the 30 AP to give it an actual niche
 	// wound bonuses still generally favor hitting people in bare limbs for wounds
-	damage = 35
-	wound_bonus = 5
-	exposed_wound_bonus = 10
+	//damage = 35
+	//wound_bonus = 5
+	//exposed_wound_bonus = 10
 
 /obj/item/ammo_casing/shotgun/milspec
 	desc = "A hot-loaded 12 gauge milspec slug shell, used by various paramilitaries and mercenary forces. Probably not legal to use under corporate regulations."
@@ -41,11 +41,11 @@
 	// adjustment: -5 damage (still +10 from base slugs), +0.25 speed (tiles/sec?), +10 wound bonus, -10 exposed wound bonus (still 15 total wound bonus)
 	// frankly I think leaving it at 50 would be fine because crewside milspecs should be dead with the same PR this comment is in
 	// *shrug
-	damage = 50
-	armour_penetration = 30
-	speed = 1.5
-	wound_bonus = 10
-	exposed_wound_bonus = 5
+	//damage = 50
+	//armour_penetration = 30
+	//speed = 1.5
+	//wound_bonus = 10
+	//exposed_wound_bonus = 5
 
 // THE BELOW TWO SLUGS ARE NOTED AS ADMIN ONLY AND HAVE ***EIGHTY*** WOUND BONUS. NOT BARE WOUND BONUS. FLAT WOUND BONUS.
 /obj/item/ammo_casing/shotgun/executioner
